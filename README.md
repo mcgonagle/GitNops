@@ -1,6 +1,5 @@
-![GitNops](images/GitNops (1280 × 640 px).png "GitNops Logo")
-
 ## GitNops.com
+![GitNops](images/GitNops (1280 × 640 px).png "GitNops Logo")
 Git Operations for Network Automation
 
 ### GitNops Definition
