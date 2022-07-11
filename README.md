@@ -17,5 +17,5 @@ Learning and understanding how to manage your network infrastructure as a softwa
 * Disaster Recovery – In the event of a catastrophic event that wipes out the production systems, if your entire infrastructure has been broken down into modular components and described as code, recovery is as simple as provisioning new compute power, restoring from backup, and deploying the infrastructure and application code. What may have been a business ending event in the old paradigm of custom-built, partially automated infrastructure becomes a manageable few hour outage, potentially delivering competitive value over those organizations suffering from the same external influences, but without the power and flexibility brought about by infrastructure as code.
 
 ## A Call to Arms
-Now is the time to get involved and learn GitNops. Please star this project and feel free to schedule a meeting with Thomas via his calendly - https://calendly.com/mcgonagle
+Now is the time to get involved and learn GitNops. Feel free to star this project or feel free to schedule a meeting with Thomas via his calendly - https://calendly.com/mcgonagle
 
