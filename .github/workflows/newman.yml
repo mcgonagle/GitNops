@@ -3,7 +3,7 @@ name: Newman Run
 on:
   pull_request:
     branches:
-    - master
+    - main
 
 jobs:
   newman:
