@@ -1,9 +1,10 @@
 name: Newman Run
 
-on:
-  pull_request:
+on:   
+  push:
     branches:
-    - main
+      - main
+      - master
 
 jobs:
   newman:
