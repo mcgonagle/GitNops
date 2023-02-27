@@ -1,11 +1,11 @@
 name: Newman Run
 
 on: 
-  workflow_dispatch
   push:
     branches:
       - main
       - master
+  workflow_dispatch
 
 jobs:
   newman:
