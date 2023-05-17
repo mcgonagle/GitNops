@@ -13,4 +13,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_WRANGLER_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages publish ./demo2 --project-name=demo2
+          command: pages publish ./demos/demo2 --project-name=demo2
