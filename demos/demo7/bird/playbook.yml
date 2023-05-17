@@ -1,0 +1,39 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: create empty file
+    file:
+      path: $HOME/touch_file
+      state: touch
+
+  - name: Copy bird.conf file
+    copy:
+      src: "bird.conf"
+      dest: /etc/bird/bird.conf
+      owner: bird
+      group: bird
+      mode: '0640'
+    register: service_conf
+
+  - name: Copy bird6.conf file
+    copy:
+      src: "bird6.conf" 
+      dest: /etc/bird/bird6.conf
+      owner: bird
+      group: bird
+      mode: '0640'
+
+  - name: Copy evnvars file
+    copy:
+      src: "envvars" 
+      dest: /etc/bird/envvars
+      owner: root
+      group: root
+      mode: '0644'
+
+  - name: Restart bird
+    service:
+      name: bird
+      state: restarted
+...
