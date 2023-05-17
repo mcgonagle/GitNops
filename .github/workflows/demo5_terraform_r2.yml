@@ -17,6 +17,15 @@ jobs:
       - name: Set env
         run: echo "AWS_DEFAULT_REGION=us-east-1" >> $GITHUB_ENV
 
+      - uses: tenable/terrascan-action@main
+        name: Run Terrascan
+        id: terrascan
+        with:
+          iac_type: 'terraform'
+          iac_version: 'v14'
+          policy_type: 'aws'
+          only_warn: true
+
       - uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: 1.1.7
