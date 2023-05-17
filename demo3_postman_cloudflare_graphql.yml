@@ -1,0 +1,27 @@
+name: Postman Cloudflare GraphQL API Tests
+
+on: [ workflow_dispatch ]
+
+jobs:
+  automated-api-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Postman CLI
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+      - name: Login to Postman CLI
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+      - name: Run API tests
+        run: |
+          postman collection run "26663889-779b46f2-038b-468a-864e-a4d6f8e661ab" -e "26663889-234dee14-7ed6-475c-b292-449a861cc8e8"
+      - uses: actions/github-script@v6
+        with:
+          github-token: ${{secrets.GH_TOKEN}}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: 1,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 Ran postman_cloudflare_graphql.yml Successfully!'
+            })

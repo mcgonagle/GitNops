@@ -1,0 +1,27 @@
+---
+name: Terraform DNS Run
+
+on: workflow_dispatch
+
+jobs:
+  terraform-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.1.7
+
+      - run: terraform init
+      - id: plan
+        run: terraform plan -no-color
+        env:
+          TF_VAR_zone_id: "${{ secrets.DNS_ZONE_ID }}"
+          TF_VAR_domain: "${{ secrets.DNS_DOMAIN }}"
+          TF_VAR_api_token: "${{secrets.CF_API_TOKEN}}"
+      - id: apply
+        run: terraform apply --auto-approve
+        env:
+          TF_VAR_zone_id: "${{ secrets.DNS_ZONE_ID }}"
+          TF_VAR_domain: "${{ secrets.DNS_DOMAIN }}"
+          TF_VAR_api_token: "${{secrets.CF_API_TOKEN}}"
