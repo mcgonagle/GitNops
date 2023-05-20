@@ -56,7 +56,6 @@
 		    "ms-python.python",
 		    "ms-python.vscode-pylance"
                     ],
-      "postCreateCommand": "curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh",
       "settings": {
         "terraform.languageServer": {
           "enabled": true,
@@ -65,6 +64,7 @@
       }
     }
   },
+  "postCreateCommand": "curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh",
   "remoteEnv": {
     "TF_LOG": "trace",
     "TF_LOG_PATH": "./terraform.log"
