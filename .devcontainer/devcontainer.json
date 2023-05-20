@@ -22,9 +22,9 @@
     "vscode": {
       "extensions": ["hashicorp.terraform",
                     "vscoss.vscode-ansible",
-				            "redhat.vscode-yaml",
-				            "ms-vscode.azurecli",
-				            "ms-azuretools.vscode-docker"
+		    "redhat.vscode-yaml",
+		    "ms-vscode.azurecli",
+		    "ms-azuretools.vscode-docker"
                     ],
       "settings": {
         "terraform.languageServer": {
