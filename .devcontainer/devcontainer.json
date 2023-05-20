@@ -69,7 +69,7 @@
     }
   },
   "postCreateCommand": "curl -o- 'https://dl-cli.pstmn.io/install/linux64.sh' | sh",
-  "postCreateCommand": "python3 -m pip install --user ansible",
+  "postCreateCommand": "curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py --user && python3 -m pip install --user ansible",
   "remoteEnv": {
     "TF_LOG": "trace",
     "TF_LOG_PATH": "./terraform.log"
