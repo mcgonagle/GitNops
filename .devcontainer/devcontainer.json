@@ -18,7 +18,7 @@
       "version": "lts"
     },
     "ghcr.io/wxw-matt/devcontainer-features/apt:latest": {
-      "packages": "vim telnet curl python3"
+      "packages": "vim telnet curl python3 ping"
     },
     "ghcr.io/flexwie/devcontainer-features/op:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
