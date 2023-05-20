@@ -5,6 +5,7 @@
     "ghcr.io/devcontainers/features/sshd:1": {
       "version": "latest"
     },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/terraform:1": {
       "version": "latest",
       "tflint": "latest",
@@ -71,7 +72,7 @@
       }
     }
   },
-  "postCreateCommand": "curl -o- 'https://dl-cli.pstmn.io/install/linux64.sh' | sh",
+  "postCreateCommand": "curl -o- https://dl-cli.pstmn.io/install/linux64.sh | sh",
   "postCreateCommand": "curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py --user && python3 -m pip install --user ansible",
   "remoteEnv": {
     "TF_LOG": "trace",
