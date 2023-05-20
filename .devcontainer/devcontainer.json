@@ -20,7 +20,12 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["hashicorp.terraform"],
+      "extensions": ["hashicorp.terraform",
+                    "vscoss.vscode-ansible",
+				            "redhat.vscode-yaml",
+				            "ms-vscode.azurecli",
+				            "ms-azuretools.vscode-docker"
+                    ],
       "settings": {
         "terraform.languageServer": {
           "enabled": true,
