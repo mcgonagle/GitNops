@@ -14,8 +14,7 @@
       "version": "lts"
     },
     "ghcr.io/wxw-matt/devcontainer-features/apt:latest": {
-      "packages": "vim telnet curl",
-      "command1":  "curl -o- 'https://dl-cli.pstmn.io/install/linux64.sh' | sh" 
+      "packages": "vim telnet curl"
     },
     "ghcr.io/flexwie/devcontainer-features/op:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
