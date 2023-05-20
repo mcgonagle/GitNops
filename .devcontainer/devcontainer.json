@@ -2,6 +2,9 @@
   "name": "Terraform",
   "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
   "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    },
     "ghcr.io/devcontainers/features/terraform:1": {
       "version": "latest",
       "tflint": "latest",
