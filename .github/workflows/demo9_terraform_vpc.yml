@@ -1,0 +1,48 @@
+name: Terraform Example VPC Create
+
+on: [push, pull_request, workflow_dispatch] 
+
+jobs:
+  terraform-run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: { env: ["demos/demo9"] }
+    environment: ${{ matrix.env }}
+    defaults:
+      run:
+        working-directory: "./${{ matrix.env }}"
+
+    steps:
+      - uses: actions/checkout@v3
+        name: checkout 
+        id: checkout
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        name: Configure AWS Credentials
+        id: configure-aws-credentials
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - uses: tenable/terrascan-action@main
+        name: Run Terrascan
+        id: terrascan
+        with:
+          iac_type: 'terraform'
+          iac_version: 'v14'
+          policy_type: 'aws'
+          only_warn: true
+
+      - uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.1.7
+
+      - id: init
+        run: terraform init
+
+      - id: plan
+        run: terraform plan -no-color 
+      
+      - id: apply
+        run: terraform apply --auto-approve 
