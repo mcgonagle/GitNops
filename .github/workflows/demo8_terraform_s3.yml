@@ -1,6 +1,6 @@
 name: Terraform S3 Bucket Create
 
-on: workflow_dispatch
+on: [push, pull_request, workflow_dispatch] 
 
 jobs:
   terraform-run:
@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-        name: Set env
+        name: checkout 
         id: checkout
 
       - uses: aws-actions/configure-aws-credentials@v4
