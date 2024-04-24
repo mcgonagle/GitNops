@@ -1,4 +1,3 @@
----
 - hosts: all
   become: yes
   tasks:
@@ -36,4 +35,3 @@
     service:
       name: bird
       state: restarted
-...
