@@ -1,1 +1,2 @@
-127.0.0.1 ansible_ssh_port=2200 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/tom/.vagrant.d/boxes/ubuntu-VAGRANTSLASH-lunar64/20230503.0.0/virtualbox/vagrant_insecure_key
+##127.0.0.1 ansible_ssh_port=2200 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/tom/.vagrant.d/boxes/ubuntu-VAGRANTSLASH-lunar64/20230503.0.0/virtualbox/vagrant_insecure_key
+192.168.64.3 ansible_ssh_port=22 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=/Users/tom/multipass-ssh-key
