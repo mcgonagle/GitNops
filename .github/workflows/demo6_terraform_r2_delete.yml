@@ -1,0 +1,48 @@
+---
+name: Terraform R2 Delete Bucket
+
+on: workflow_dispatch
+
+jobs:
+  terraform-run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: { env: ["demos/demo6"] }
+    environment: ${{ matrix.env }}
+    defaults:
+      run:
+        working-directory: "./${{ matrix.env }}"
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set env
+        run: echo "AWS_DEFAULT_REGION=us-east-1" >> $GITHUB_ENV
+
+      - uses: tenable/terrascan-action@main
+        name: Run Terrascan
+        id: terrascan
+        with:
+          iac_type: 'terraform'
+          iac_version: 'v14'
+          policy_type: 'aws'
+          only_warn: true
+
+      - uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.1.7
+
+      - id: init
+        run: terraform init
+
+      - id: plan
+        run: terraform plan -no-color
+        env:
+          TF_VAR_CF_R2_ACCESS_KEY_ID: "${{ secrets.CF_R2_ACCESS_KEY_ID }}"
+          TF_VAR_CF_R2_SECRET_ACCESS_KEY: "${{ secrets.CF_R2_SECRET_ACCESS_KEY }}"
+          TF_VAR_CF_ACCOUNT_ID: "${{ secrets.CF_ACCOUNT_ID }}"
+
+      - id: apply
+        run: terraform apply --auto-approve
+        env:
+          TF_VAR_CF_R2_ACCESS_KEY_ID: "${{ secrets.CF_R2_ACCESS_KEY_ID }}"
+          TF_VAR_CF_R2_SECRET_ACCESS_KEY: "${{ secrets.CF_R2_SECRET_ACCESS_KEY }}"
+          TF_VAR_CF_ACCOUNT_ID: "${{ secrets.CF_ACCOUNT_ID }}"
