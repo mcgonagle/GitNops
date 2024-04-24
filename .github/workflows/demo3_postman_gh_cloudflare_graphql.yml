@@ -20,7 +20,7 @@ jobs:
           github-token: ${{secrets.GH_TOKEN}}
           script: |
             github.rest.issues.createComment({
-              issue_number: 3,
+              issue_number: 4,
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: '👋 Ran postman_cloudflare_graphql.yml Successfully!'
