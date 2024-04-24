@@ -3,7 +3,7 @@ GitNops is an operational framework that takes DevOps best practices used for ap
 
 ## Packet Pushers Heavy Networking Podcast #706
 The GitNops Approach to Collaborative Networking [direct download to the podcast](podcast/HN_706_The_GitNops_Approach_To_Collaborative_Network_Automation.mp3). 
-Packet Pushers Heavy Networking Website [link](https://packetpushers.net/podcasts/heavy-networking/hn706-the-gitnops-approach-to-collaborative-network-automation/)
+Packet Pushers Heavy Networking [link](https://packetpushers.net/podcasts/heavy-networking/hn706-the-gitnops-approach-to-collaborative-network-automation/) to GitNops podcast.
 
 
 ## Collaborative Automation is Key
