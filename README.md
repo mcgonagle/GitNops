@@ -1,6 +1,11 @@
 # GitNops
 GitNops is an operational framework that takes DevOps best practices used for application development such as version control, collaboration, compliance, and CI/CD, and applies them to network automation.
 
+## Packet Pushers Heavy Networking Podcast #706
+The GitNops Approach to Collaborative Networking [direct download to the podcast](podcast/HN_706_The_GitNops_Approach_To_Collaborative_Network_Automation.mp3). 
+Packet Pushers Heavy Networking Website [link](https://packetpushers.net/podcasts/heavy-networking/hn706-the-gitnops-approach-to-collaborative-network-automation/)
+
+
 ## Collaborative Automation is Key
 Collaborative automation is simply teams of engineers and administrators working together, towards a common goal, utilizing automation tooling to make their jobs easier, more efficient, and stress free. A secondary DevOps practice configuration management is important to I2aC, and has undergone a fundamental shift over the last few years as social coding via sites like github.com have become increasingly popular. Network teams are able to share their software modeled BIG-IPs with other team members, solicit feedback, find bugs, and squash those bugs all because their BIG-IPs are modeled in code.
 
