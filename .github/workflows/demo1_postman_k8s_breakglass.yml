@@ -14,6 +14,6 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run "26663889-d4fb9c01-344b-4961-a11c-b8f158219e0f" -e "26663889-234dee14-7ed6-475c-b292-449a861cc8e8" --env-var baseUrl=$GH_CLI_BASEURL
+          postman collection run "26663889-d4fb9c01-344b-4961-a11c-b8f158219e0f" -e "26663889-234dee14-7ed6-475c-b292-449a861cc8e8" --env-var baseUrl=$GHBASEURL
       - name: Coveralls
         uses: coverallsapp/github-action@v2
