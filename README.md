@@ -5,6 +5,9 @@ GitNops is an operational framework that takes DevOps best practices used for ap
 The GitNops Approach to Collaborative Networking [direct download to the podcast](podcast/HN_706_The_GitNops_Approach_To_Collaborative_Network_Automation.mp3). 
 Packet Pushers Heavy Networking [link](https://packetpushers.net/podcasts/heavy-networking/hn706-the-gitnops-approach-to-collaborative-network-automation/) to GitNops podcast.
 
+### F5 DevCentral Interview with Buu Lam and Jason Rahm
+[Link](https://youtu.be/Sr--jrHYKUA?si=4mp4QK0hLS_7IYqZ) to discussion about GitNops.
+
 ### Previous GitNops Trainings
 GitNops was presented to the Open Network User Group (ONUG Board) and was a four hour training at [ONUG Spring 2023](https://onug.net/events/onug-training-modern-network-automation-with-gitnops/).
 
