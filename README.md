@@ -1,5 +1,5 @@
 # GitNops
-GitNops is an operational framework that takes DevOps best practices used for application development such as version control, collaboration, compliance, and CI/CD, and applies them to network automation.
+GitNops is an operational framework that takes DevOps best practices used for application development such as version control, collaboration, compliance, and CI/CD, continuous monitoring and applies them to network automation.
 
 ### Packet Pushers Heavy Networking Podcast #706
 The GitNops Approach to Collaborative Networking [direct download to the podcast](podcast/HN_706_The_GitNops_Approach_To_Collaborative_Network_Automation.mp3). 
