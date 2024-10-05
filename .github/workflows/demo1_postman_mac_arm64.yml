@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs:
   automated-api-tests:
-    runs-on: [self-hosted, macOS]
+    runs-on: [self-hosted, ARM64, macOS]
     steps:
       - uses: actions/checkout@v3
       - name: Install Postman CLI
