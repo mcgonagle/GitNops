@@ -6,7 +6,7 @@ jobs:
   automated-api-tests:
     runs-on: [self-hosted, macOS]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Run Ansible
         run: |
           cd demos/demo7/bird && /usr/local/bin/ansible-playbook ./playbook.yml 
