@@ -22,6 +22,9 @@ Packet Pushers Heavy Total Network Operations DevOps, NetOps and Batman Part 1 [
 ### Packet Pushers Total Network Operations #4
 Packet Pushers Heavy Total Network Operations DevOps, NetOps and Batman Part 2 [link](https://packetpushers.net/podcasts/fat-pipe/tno004-devops-netops-and-batman-part-2/).
 
+### Network Automation Nerds #84
+Network Automation Nerds, GitNops Zero to Hero [link](https://packetpushers.net/podcasts/network-automation-nerds/nan084-from-gitnops-zero-to-hero/). 
+
 ### F5 DevCentral Interview with Buu Lam and Jason Rahm
 [Link](https://youtu.be/Sr--jrHYKUA?si=4mp4QK0hLS_7IYqZ) to discussion about GitNops.
 
