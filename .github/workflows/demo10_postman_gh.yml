@@ -1,0 +1,17 @@
+name: Postman HTTPBin Example on a GH Hosted Runner
+
+on: workflow_dispatch
+
+jobs:
+  automated-api-tests:
+    runs-on: ubuntu-latest 
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Postman CLI
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh 
+      - name: Login to Postman CLI
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+      - name: Run API tests
+        run: |
+          postman collection run "26663889-1aa447d3-bf0e-4832-9c5b-ad487ec9367f"
