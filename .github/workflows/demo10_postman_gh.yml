@@ -1,4 +1,4 @@
-name: Postman HTTPBin Example on a GH Hosted Runner
+name: Postman HTTPBin Example on a GH Hosted Runner created with Claude
 
 on: workflow_dispatch
 
