@@ -17,7 +17,7 @@ provider "cloudflare" {
 resource "cloudflare_record" "www" {
   zone_id = var.zone_id
   name    = "www"
-  value   = "203.0.113.10"
+  content   = "203.0.113.10"
   type    = "A"
   proxied = true
 }
