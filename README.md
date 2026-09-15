@@ -49,8 +49,3 @@ GitNops trainings have been provided in the past and you can schedule them [here
 
 ### Previous GitNops Trainings
 GitNops was presented to the Open Network User Group (ONUG Board) and was a four hour training at [ONUG Spring 2023](https://onug.net/events/onug-training-modern-network-automation-with-gitnops/).
-
-
-## A Call to Arms
-
-Now is the time to get involved and learn GitNops! Feel free to star this project, and/or schedule a meeting with Thomas via his calendly - https://calendly.com/mcgonagle
