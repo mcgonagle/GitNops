@@ -6,7 +6,14 @@ GitNops is an operational framework that takes DevOps best practices used for ap
 * CI/CD
 * continuous monitoring
 
-and applies them to network automation.  
+and applies them to network automation. 
+
+## Benefits of a Flox enabled networking toolkit
+* Same tools locally and in GitHub Actions
+* Declarative Configuration
+* Reproducible Systems
+* Atomic Upgrades and Rollbacks
+
 
 ## Benefits of GitNops - A Flox enabled networking toolkit
 * Repeatability – The very act of modeling your infrastructure in code provides repeatability. Every configuration element is captured in the code and will enforce that defined configuration each and every time it is run. IaC provides confidence that the infrastructure is configured and operating in the way it is supposed to be.
