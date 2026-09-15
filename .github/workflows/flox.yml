@@ -1,0 +1,20 @@
+name: flox-gitnops-demo
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    env:
+      FLOX_FLOXHUB_TOKEN: ${{ secrets.FLOX_SERVICE_TOKEN }}
+      TF_VAR_zone_id: "${{ secrets.DNS_ZONE_ID }}"
+      TF_VAR_domain: "${{ secrets.DNS_DOMAIN }}"
+      TF_VAR_api_token: "${{secrets.CF_API_TOKEN}}"
+    steps:
+      - uses: "actions/checkout@v4"
+      - uses: "flox/install-flox-action@v2"
+        with: 
+          trusted-environments: mcgonagle/gitnops
+      - uses: "flox/activate-action@v1"
+        with:
+          environment: mcgonagle/gitnops
+          command: terraform init && terraform plan --no-color && terraform apply
