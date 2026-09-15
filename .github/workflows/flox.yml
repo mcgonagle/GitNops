@@ -17,4 +17,4 @@ jobs:
       - uses: "flox/activate-action@v1"
         with:
           environment: mcgonagle/gitnops
-          command: terraform init && terraform plan -no-color && terraform apply
+          command: tofu init && tofu plan -no-color && tofu apply
