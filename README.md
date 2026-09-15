@@ -15,7 +15,7 @@ and applies them to network automation.
 * Atomic Upgrades and Rollbacks
 
 
-## Benefits of GitNops - A Flox enabled networking toolkit
+## Benefits of GitNops + Flox
 * Repeatability – The very act of modeling your infrastructure in code provides repeatability. Every configuration element is captured in the code and will enforce that defined configuration each and every time it is run. IaC provides confidence that the infrastructure is configured and operating in the way it is supposed to be.
 * Automation – The very act of abstracting out infrastructures brings us the benefits of automation.
 * Agility – Utilizing collaborative automation techniques like configuration management provide a confidence in the various versions of the code base. This allows an engineer or administrator to roll forward or backward if a problem were encountered. Logs of who did what, when, are available and can be analyzed to determine who or what caused the problem. This minimizes the average time to fix problems (MTTR) and encourages root cause analysis.
