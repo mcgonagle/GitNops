@@ -14,7 +14,7 @@ provider "cloudflare" {
   api_token = var.api_token
 }
 
-resource "cloudflare_record" "hello_world" {
+resource "cloudflare_dns_record" "hello_world" {
   zone_id = var.zone_id
   name    = "hello"
   content   = "\"hello world from terraform\""
