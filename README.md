@@ -10,9 +10,8 @@ and applies them to network automation.
 
 ## Benefits of a Flox-enabled networking toolkit
 * Tools are Omnipresent
-* Declarative Configuration
-* Reproducible Systems
-* Atomic Upgrades and Rollbacks
+* Vendor-Agnostic CI/CD
+* Single CI/CD Action 
 
 
 ## Benefits of GitNops + Flox
