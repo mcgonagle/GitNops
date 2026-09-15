@@ -17,4 +17,4 @@ jobs:
       - uses: "flox/activate-action@v1"
         with:
           environment: mcgonagle/gitnops
-          command: tofu init && tofu plan -no-color && tofu apply
+          command: tofu init && tofu plan -no-color && tofu apply -auto-approve
