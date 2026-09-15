@@ -1,0 +1,995 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "schema-version": "1.16.0",
+    "install": {
+      "ansible": {
+        "pkg-path": "ansible"
+      },
+      "curl": {
+        "pkg-path": "curl"
+      },
+      "dig": {
+        "pkg-path": "dig"
+      },
+      "iperf3": {
+        "pkg-path": "iperf3"
+      },
+      "newman": {
+        "pkg-path": "newman"
+      },
+      "nmap": {
+        "pkg-path": "nmap"
+      },
+      "opentofu": {
+        "pkg-path": "opentofu"
+      },
+      "tcpdump": {
+        "pkg-path": "tcpdump"
+      },
+      "tshark": {
+        "pkg-path": "tshark"
+      },
+      "wget": {
+        "pkg-path": "wget"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {}
+  },
+  "packages": [
+    {
+      "attr_path": "ansible",
+      "broken": false,
+      "derivation": "/nix/store/as6xdzzjnky0xwcv9v74y1q6qb7rdlmc-python3.14-ansible-core-2.21.3.drv",
+      "description": "Radically simple IT automation",
+      "install_id": "ansible",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "ansible-core-2.21.3",
+      "pname": "ansible",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:02:12.776620Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.21.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/ndjk3a585gn26ih836kymxvkakxhj511-python3.14-ansible-core-2.21.3-dist",
+        "out": "/nix/store/78iix8sibxf9hxafjicmcx77l254v4rq-python3.14-ansible-core-2.21.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ansible",
+      "broken": false,
+      "derivation": "/nix/store/ascnxpyk0bqwiy4dk9j6swd1vi8i0gha-python3.14-ansible-core-2.21.3.drv",
+      "description": "Radically simple IT automation",
+      "install_id": "ansible",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "ansible-core-2.21.3",
+      "pname": "ansible",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:37:22.754117Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.21.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/xl00vz88pg8r851714r1qa07m9i41baj-python3.14-ansible-core-2.21.3-dist",
+        "out": "/nix/store/nvq9aw0bi580mxh8np9k416zlmgjnwfl-python3.14-ansible-core-2.21.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ansible",
+      "broken": false,
+      "derivation": "/nix/store/n6j2kxqv2r53ma0ijir1lpnsmgf9n83j-python3.14-ansible-core-2.21.3.drv",
+      "description": "Radically simple IT automation",
+      "install_id": "ansible",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "ansible-core-2.21.3",
+      "pname": "ansible",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:16:42.137515Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.21.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/x27i15swx3fxvjxb6ks09bbq3p9lc6kw-python3.14-ansible-core-2.21.3-dist",
+        "out": "/nix/store/wbhgrnfpvxzv5cai6g0s3l3dr51072iq-python3.14-ansible-core-2.21.3"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "curl",
+      "broken": false,
+      "derivation": "/nix/store/qdwddmvy38qd1scwqhbzl9lac5m02v3b-curl-8.22.0.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "curl-8.22.0",
+      "pname": "curl",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:02:13.367171Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "8.22.0",
+      "outputs_to_install": [
+        "bin",
+        "bin",
+        "man",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/5k2khxpqssazsbilyh0d4mjvs84ablpf-curl-8.22.0-bin",
+        "dev": "/nix/store/sn4w8aa1igcjapghgn8ixxw7f0mdyd53-curl-8.22.0-dev",
+        "devdoc": "/nix/store/1259f4wbkniw096ydgc4klpybrwyywv0-curl-8.22.0-devdoc",
+        "man": "/nix/store/6qzi8yj670n8hxgqx86h4hyfvr6py2wh-curl-8.22.0-man",
+        "out": "/nix/store/6c7nrda2k1s1qq8c97rckhm3iy61hkz9-curl-8.22.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "curl",
+      "broken": false,
+      "derivation": "/nix/store/14fgqibnv72i9fq341gzmdxgqn3c5rsa-curl-8.22.0.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "curl-8.22.0",
+      "pname": "curl",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:37:23.511139Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "8.22.0",
+      "outputs_to_install": [
+        "bin",
+        "bin",
+        "bin",
+        "man",
+        "man",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/xrpn2mzijwrl6rvi8h1rg73c3dr8i4d0-curl-8.22.0-bin",
+        "debug": "/nix/store/q6qvs5zxs0y74xzpw3qbddr2q28mghrf-curl-8.22.0-debug",
+        "dev": "/nix/store/gkvhmbk2qmikkmkb565ln3w3wk53naak-curl-8.22.0-dev",
+        "devdoc": "/nix/store/lzh8xk5vp9l81c8p6l3r6m3d974cwpbp-curl-8.22.0-devdoc",
+        "man": "/nix/store/rfi33w2cg0rp7izn93bczqmw74mjd9ik-curl-8.22.0-man",
+        "out": "/nix/store/dwx4mpqydfhykk29yy1dxdjrbs0hn1yh-curl-8.22.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "curl",
+      "broken": false,
+      "derivation": "/nix/store/08ps25i5iv3cynwwh6xg9g9smf1fyckg-curl-8.22.0.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "curl-8.22.0",
+      "pname": "curl",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:16:42.932053Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "8.22.0",
+      "outputs_to_install": [
+        "bin",
+        "bin",
+        "bin",
+        "man",
+        "man",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/cp8qnyl8i0s62g3a1465i258mf5bcr6k-curl-8.22.0-bin",
+        "debug": "/nix/store/lx4z0gwrc7qg1z42gzvv26dlh8sl27as-curl-8.22.0-debug",
+        "dev": "/nix/store/5ca54qw9hzpc1f3dk5x3c9cg3bdb93iv-curl-8.22.0-dev",
+        "devdoc": "/nix/store/khm5a5wzp669swlph32akb5fzf36dlld-curl-8.22.0-devdoc",
+        "man": "/nix/store/akw680dzfd4azvagifsxlwmjpipp3yz4-curl-8.22.0-man",
+        "out": "/nix/store/s21axjr25zw6x9g6ripn7kamgbvw0y69-curl-8.22.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "dig",
+      "broken": false,
+      "derivation": "/nix/store/s67x162ncspwgl33l9xfznb57w01f220-bind-9.20.26.drv",
+      "description": "Domain name server",
+      "install_id": "dig",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "bind-9.20.26",
+      "pname": "dig",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:02:13.480003Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "9.20.26",
+      "outputs_to_install": [
+        "out",
+        "host",
+        "dnsutils"
+      ],
+      "outputs": {
+        "dev": "/nix/store/vjrmw649slcqjsh2mrvq4aw53dv4m51a-bind-9.20.26-dev",
+        "dnsutils": "/nix/store/pdxcxwv2n770lzv9pk4fyycvzlbmrmrs-bind-9.20.26-dnsutils",
+        "host": "/nix/store/3frndjlvdgz9mngfc1ihi54yjhiqzr5b-bind-9.20.26-host",
+        "lib": "/nix/store/s97riykb8v7x0w85xm9x87zkikzxq8vs-bind-9.20.26-lib",
+        "man": "/nix/store/1hmbb6wrv8fs5zww6hlqf33wbcb3nlzk-bind-9.20.26-man",
+        "out": "/nix/store/rx2kf5rcflqs5xvy22rvfc2hpw5arfvm-bind-9.20.26"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "dig",
+      "broken": false,
+      "derivation": "/nix/store/v2xl5rm5kyiybjw51jljsrr6ka5jql32-bind-9.20.26.drv",
+      "description": "Domain name server",
+      "install_id": "dig",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "bind-9.20.26",
+      "pname": "dig",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:37:23.653210Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "9.20.26",
+      "outputs_to_install": [
+        "out",
+        "host",
+        "dnsutils"
+      ],
+      "outputs": {
+        "dev": "/nix/store/2c1ahkzgh7y9nf03rwbqisnylygd46c6-bind-9.20.26-dev",
+        "dnsutils": "/nix/store/7ka9wm4x2aj3p1zg5pqc1yps3kd69ry9-bind-9.20.26-dnsutils",
+        "host": "/nix/store/afifbp4iijj9mzs80srm76p6f48a1vng-bind-9.20.26-host",
+        "lib": "/nix/store/390kk4s62v1hsph7mssayq6vy44gjzsh-bind-9.20.26-lib",
+        "man": "/nix/store/c6r83p63ffwg5ajqfmf5p2zv8k96w6y7-bind-9.20.26-man",
+        "out": "/nix/store/1abyjn801c0a8xrh0sdaw59d8pv5px7x-bind-9.20.26"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "dig",
+      "broken": false,
+      "derivation": "/nix/store/yqg8m8gmq1q97wkz1yfv95h0y9y3mfgx-bind-9.20.26.drv",
+      "description": "Domain name server",
+      "install_id": "dig",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "bind-9.20.26",
+      "pname": "dig",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:16:43.089720Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "9.20.26",
+      "outputs_to_install": [
+        "out",
+        "host",
+        "dnsutils"
+      ],
+      "outputs": {
+        "dev": "/nix/store/bfv50vk0ghv94r9pxvv53zyzz7yza39v-bind-9.20.26-dev",
+        "dnsutils": "/nix/store/745mcarhzm11cywpfwkyrcn8ps13lfj6-bind-9.20.26-dnsutils",
+        "host": "/nix/store/a2gadh3hpbbnpl4j9d96syzi0z1jv6ys-bind-9.20.26-host",
+        "lib": "/nix/store/pr37blz9mcvr1acnvmc0d3bg05179fv4-bind-9.20.26-lib",
+        "man": "/nix/store/chg19fwgwagaip3i0ar1nqx20sg79hg1-bind-9.20.26-man",
+        "out": "/nix/store/7lqlpsc36y62hyb6xbfssh2kdfmad4p5-bind-9.20.26"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "iperf3",
+      "broken": false,
+      "derivation": "/nix/store/dnbqi9q7sgp4bybh86b3mlvrafa3p4z4-iperf-3.21.drv",
+      "description": "Tool to measure IP bandwidth using UDP or TCP",
+      "install_id": "iperf3",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "iperf-3.21",
+      "pname": "iperf3",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:02:29.876939Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.21",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/c7h8b9wck4d79bgvlz9ggnrhrj8cy2qc-iperf-3.21-dev",
+        "lib": "/nix/store/dsbwr9vxx9h4l2gahd427ckl1pgnwm2c-iperf-3.21-lib",
+        "man": "/nix/store/ipj66zaf13ac4xfyf9sn3lpik1dl2b60-iperf-3.21-man",
+        "out": "/nix/store/a91jgcz9c50gq7p886nvhfd7b68sfgq6-iperf-3.21"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "iperf3",
+      "broken": false,
+      "derivation": "/nix/store/zyn6mcb9gi7fxz6z5gfvip5f1x6wny2r-iperf-3.21.drv",
+      "description": "Tool to measure IP bandwidth using UDP or TCP",
+      "install_id": "iperf3",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "iperf-3.21",
+      "pname": "iperf3",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:37:44.299534Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.21",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/cnw0cb7fllhah1pmhcpg0zsndfmh2i3b-iperf-3.21-dev",
+        "lib": "/nix/store/jzmrki57nv1xbqii1rkr0ck4j8hbsi4h-iperf-3.21-lib",
+        "man": "/nix/store/4q78rf1iw555anjbsyyrm432hklc5wdh-iperf-3.21-man",
+        "out": "/nix/store/a4bqkcqrnmcgjqisrbpxx3cx82wq2lgv-iperf-3.21"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "iperf3",
+      "broken": false,
+      "derivation": "/nix/store/jadhq4qycq8f0n0jizfa7n5ddjy6h9wn-iperf-3.21.drv",
+      "description": "Tool to measure IP bandwidth using UDP or TCP",
+      "install_id": "iperf3",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "iperf-3.21",
+      "pname": "iperf3",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:17:05.019147Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.21",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/ih0krnx7764nmavmzxnfwgm495x68swl-iperf-3.21-dev",
+        "lib": "/nix/store/ydmm27fllh0s43cdnh83dd30zw6y07qj-iperf-3.21-lib",
+        "man": "/nix/store/4lgcr3pzw5yjazwa571qf19n9hh1y4h7-iperf-3.21-man",
+        "out": "/nix/store/5a34gxma82ihdl8ic1r34lgh75snjz5g-iperf-3.21"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "newman",
+      "broken": false,
+      "derivation": "/nix/store/zxi3innjb0k2gnmxiy0h9a82nq54250x-newman-6.2.2.drv",
+      "description": "Command-line collection runner for Postman",
+      "install_id": "newman",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "newman-6.2.2",
+      "pname": "newman",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:02:37.525954Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "6.2.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bx7xkcr2i3iv3ckjg5kzfc6gsg6mw8ns-newman-6.2.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "newman",
+      "broken": false,
+      "derivation": "/nix/store/1q9ja5f487f0nnsms0p6bwp6jqbddc08-newman-6.2.2.drv",
+      "description": "Command-line collection runner for Postman",
+      "install_id": "newman",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "newman-6.2.2",
+      "pname": "newman",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:37:59.596599Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "6.2.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/m6fx88mf74sslhnbf6f3ygfxxgkc61ax-newman-6.2.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "newman",
+      "broken": false,
+      "derivation": "/nix/store/147c3k0zhg8wg2ga33b1h63kh9y3kx2v-newman-6.2.2.drv",
+      "description": "Command-line collection runner for Postman",
+      "install_id": "newman",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "newman-6.2.2",
+      "pname": "newman",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:17:22.552146Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "6.2.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/z7cbn5cmscm761cx5zyjccz38d388z67-newman-6.2.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nmap",
+      "broken": false,
+      "derivation": "/nix/store/k2i63c5fsi4b2cy6hwpzk3i6v8l7hc3d-nmap-7.991.drv",
+      "description": "Free and open source utility for network discovery and security auditing",
+      "install_id": "nmap",
+      "license": "GPL-2.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "nmap-7.991",
+      "pname": "nmap",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:02:38.161926Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.991",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/r8q1hsw5ij8casjzil50ja35q0axdwgj-nmap-7.991"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nmap",
+      "broken": false,
+      "derivation": "/nix/store/1zw6cj7j1xyds3gdmphvq5vjsckdmj6i-nmap-7.991.drv",
+      "description": "Free and open source utility for network discovery and security auditing",
+      "install_id": "nmap",
+      "license": "GPL-2.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "nmap-7.991",
+      "pname": "nmap",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:38:00.446863Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.991",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/y8hk17ckhs9acqa9vjdqylz09c6qif3k-nmap-7.991"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nmap",
+      "broken": false,
+      "derivation": "/nix/store/sl4f7g384z5q36yvks0ba1drcsqw1lfv-nmap-7.991.drv",
+      "description": "Free and open source utility for network discovery and security auditing",
+      "install_id": "nmap",
+      "license": "GPL-2.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "nmap-7.991",
+      "pname": "nmap",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:17:23.477213Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.991",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2dwzc0w890nj8alqpymipcn83mlaynbh-nmap-7.991"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "opentofu",
+      "broken": false,
+      "derivation": "/nix/store/pivyfyhrdqy44890674jlicaqfw5jsaj-opentofu-1.12.6.drv",
+      "description": "Tool for building, changing, and versioning infrastructure",
+      "install_id": "opentofu",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "opentofu-1.12.6",
+      "pname": "opentofu",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:02:43.447463Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.12.6",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rzbdapj6hk41s8g8pn6y1gy6q9f132ya-opentofu-1.12.6"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "opentofu",
+      "broken": false,
+      "derivation": "/nix/store/pg7gr51xqn1wf4bj4afrrwki1v579vhj-opentofu-1.12.6.drv",
+      "description": "Tool for building, changing, and versioning infrastructure",
+      "install_id": "opentofu",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "opentofu-1.12.6",
+      "pname": "opentofu",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:38:07.626380Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.12.6",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/v2div0w2c2a8hhk8bxvyq8139kxhy3rg-opentofu-1.12.6"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "opentofu",
+      "broken": false,
+      "derivation": "/nix/store/gncrg63vxr4b706r33qkqxcvaga8df1r-opentofu-1.12.6.drv",
+      "description": "Tool for building, changing, and versioning infrastructure",
+      "install_id": "opentofu",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "opentofu-1.12.6",
+      "pname": "opentofu",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:17:31.104239Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.12.6",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6knnwrwxlzs7f7rlr14b8agk69aa3w5b-opentofu-1.12.6"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tcpdump",
+      "broken": false,
+      "derivation": "/nix/store/spah4wkxqx86kdnd0s3vf79v4r9giwgm-tcpdump-4.99.6.drv",
+      "description": "Network sniffer",
+      "install_id": "tcpdump",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "tcpdump-4.99.6",
+      "pname": "tcpdump",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:04:12.830421Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.99.6",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2d0ryii083w8ff22adrh969101imgpiw-tcpdump-4.99.6"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tcpdump",
+      "broken": false,
+      "derivation": "/nix/store/0bv56zklvp0d2hr3xfsg5jbn841zzsp6-tcpdump-4.99.6.drv",
+      "description": "Network sniffer",
+      "install_id": "tcpdump",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "tcpdump-4.99.6",
+      "pname": "tcpdump",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:39:57.705927Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.99.6",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/zar1ngk0rjpjv7jb0l9gfbncn6a0sfpc-tcpdump-4.99.6"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tcpdump",
+      "broken": false,
+      "derivation": "/nix/store/zqypxfk3cax1yjjfw5d401has37wjfy8-tcpdump-4.99.6.drv",
+      "description": "Network sniffer",
+      "install_id": "tcpdump",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "tcpdump-4.99.6",
+      "pname": "tcpdump",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:19:25.621082Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.99.6",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ljmxifsfjhzz0ziir4jzvaapqhah6zai-tcpdump-4.99.6"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tshark",
+      "broken": false,
+      "derivation": "/nix/store/im2if84wyc0snpxwparapqqi8zcis5bp-wireshark-cli-4.6.8.drv",
+      "description": "Powerful network protocol analyzer",
+      "install_id": "tshark",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "wireshark-cli-4.6.8",
+      "pname": "tshark",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:04:35.289950Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.6.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/i98kf9xbv2zfzibmaj6v1mv2l352dgbx-wireshark-cli-4.6.8-dev",
+        "out": "/nix/store/9xp73wmgbqgbfnhs27vfnifnchndrvvv-wireshark-cli-4.6.8"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tshark",
+      "broken": false,
+      "derivation": "/nix/store/vcyyq1rdjzmrx0mna0phr2rs2r13m37q-wireshark-cli-4.6.8.drv",
+      "description": "Powerful network protocol analyzer",
+      "install_id": "tshark",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "wireshark-cli-4.6.8",
+      "pname": "tshark",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:40:29.436276Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.6.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/688d2i8ja06cfh6m54calcssq0zvrr30-wireshark-cli-4.6.8-dev",
+        "out": "/nix/store/fjav0abas358qc3wdg9zxz63vmrfj0w1-wireshark-cli-4.6.8"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tshark",
+      "broken": false,
+      "derivation": "/nix/store/0gk1qa02m4rmrw0qm5nbpfxfs3bzr6hv-wireshark-cli-4.6.8.drv",
+      "description": "Powerful network protocol analyzer",
+      "install_id": "tshark",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "wireshark-cli-4.6.8",
+      "pname": "tshark",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:19:58.171647Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.6.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/xawkl85nmk8479zhgcqinpxixqywrmrp-wireshark-cli-4.6.8-dev",
+        "out": "/nix/store/6afmv448inhbcnvwqxwkwckqyj3iyz78-wireshark-cli-4.6.8"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "wget",
+      "broken": false,
+      "derivation": "/nix/store/06nwxizva03n02z7grzqdv9721p3iakf-wget-1.25.0.drv",
+      "description": "Tool for retrieving files using HTTP, HTTPS, and FTP",
+      "install_id": "wget",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "wget-1.25.0",
+      "pname": "wget",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:05:11.882298Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.25.0",
+      "outputs_to_install": [
+        "man",
+        "man",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/c85sdcfs41fcipk1b2hqv3z4n2z6r7kh-wget-1.25.0-info",
+        "man": "/nix/store/m98sj66g9balyg0iqb1vv10pprfzs5i9-wget-1.25.0-man",
+        "out": "/nix/store/8q3jcscp3lg7jadjcmh5vhm5gd5z5j9a-wget-1.25.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "wget",
+      "broken": false,
+      "derivation": "/nix/store/8bl99fypfg4cqawcpinx4h6n46lgbmb8-wget-1.25.0.drv",
+      "description": "Tool for retrieving files using HTTP, HTTPS, and FTP",
+      "install_id": "wget",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "wget-1.25.0",
+      "pname": "wget",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:41:12.622536Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.25.0",
+      "outputs_to_install": [
+        "man",
+        "man",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/s7kqd3iifjrmbpfpq1k9y1p87jha6g3q-wget-1.25.0-info",
+        "man": "/nix/store/1yfnc7rpqmh1yr5aln33w836hky4pq6g-wget-1.25.0-man",
+        "out": "/nix/store/6wyj9ycxngp7qhhkh2gc95vmz94kykpc-wget-1.25.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "wget",
+      "broken": false,
+      "derivation": "/nix/store/7fnwlfrqvr0ya7wwimwwja6ckai8i5d9-wget-1.25.0.drv",
+      "description": "Tool for retrieving files using HTTP, HTTPS, and FTP",
+      "install_id": "wget",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "wget-1.25.0",
+      "pname": "wget",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:20:43.005280Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.25.0",
+      "outputs_to_install": [
+        "man",
+        "man",
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/wyfar87mg6ipaky0i9pb671r3k0bcydh-wget-1.25.0-info",
+        "man": "/nix/store/12ny9i4d94wj3759y8vljmcjkvrrac8c-wget-1.25.0-man",
+        "out": "/nix/store/px88pyah952lannwx4qrzr8rrn3hknm9-wget-1.25.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
