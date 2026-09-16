@@ -10,6 +10,7 @@ GitNops is an operational framework that takes DevOps best practices used for ap
 and applies them to network automation. 
 
 ## Benefits of a Flox-enabled toolkit
+* Comprehensive Networking Toolkit
 * Tools are Omnipresent
 * Same Tool Version Everywhere
 * Architecture Independence
