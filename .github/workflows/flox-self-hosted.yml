@@ -1,0 +1,17 @@
+name: flox-gitnops-self-hosted-demo
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: [self-hosted, macOS]
+    env:
+      FLOX_FLOXHUB_TOKEN: ${{ secrets.FLOX_SERVICE_TOKEN }}
+    steps:
+      - uses: "actions/checkout@v4"
+      - uses: "flox/install-flox-action@v2"
+        with: 
+          trusted-environments: mcgonagle/gitnops
+      - uses: "flox/activate-action@v1"
+        with:
+          environment: mcgonagle/gitnops
+          command: cd demos/demo7/bird && /usr/local/bin/ansible-playbook ./playbook.yml
