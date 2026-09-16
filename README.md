@@ -1,5 +1,6 @@
 # GitNops - A Flox enabled network automation toolkit
 GitNops is an operational framework that takes DevOps best practices used for application development, such as:
+* configuration as code
 * version control
 * collaboration
 * compliance
