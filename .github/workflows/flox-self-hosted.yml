@@ -14,4 +14,4 @@ jobs:
       - uses: "flox/activate-action@v1"
         with:
           environment: mcgonagle/gitnops
-          command: cd demos/demo7/bird && /usr/local/bin/ansible-playbook ./playbook.yml
+          command: cd demos/demo7/bird && ansible-playbook ./playbook.yml
