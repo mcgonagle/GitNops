@@ -10,6 +10,7 @@ and applies them to network automation.
 
 ## Benefits of a Flox-enabled toolkit
 * Tools are Omnipresent
+* Same Tool Version Everywhere
 * Vendor-Agnostic CI/CD
 * Single CI/CD Action 
 
